@@ -7,7 +7,7 @@ setup_git() {
 
 commit_files() {
   git add --all
-  git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
+  git commit --message "Add new exchanges rates (travis#$TRAVIS_BUILD_NUMBER)"
 }
 
 upload_files() {
