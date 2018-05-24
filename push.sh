@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git diff-index --quiet HEAD
+git diff --exit-code --name-only ./price.db
 if [ "$?" -eq "0" ]; then
  echo "No changes to push";
  exit;

@@ -1,6 +1,7 @@
 lang: ruby
 script:
   - "git checkout master"
+  - "git add --all"
   - "./update_price_db.sh"
 
 after_script:
