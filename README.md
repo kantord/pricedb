@@ -25,3 +25,40 @@ ledger -f book.txt --price-db <(tar -xJf - <(curl -s https://raw.githubuserconte
 
 If you are looking for a reporting tool for ledger that can handle updating your pricedb for you, I recommend checking out my other project called [ledger-cli-dashboard](https://github.com/kantord/ledger-cli-dashboard).
 
+## Supported currencies
+- EUR
+- AUD
+- BGN
+- BRL
+- CAD
+- CHF
+- CNY
+- CZK
+- DKK
+- EEK
+- GBP
+- HKD
+- HRK
+- HUF
+- IDR
+- ILS
+- INR
+- ISK
+- JPY
+- KRW
+- LTL
+- LVL
+- MXN
+- MYR
+- NOK
+- NZD
+- PHP
+- PLN
+- RON
+- RUB
+- SEK
+- SGD
+- THB
+- TRY
+- USD
+- ZAR
