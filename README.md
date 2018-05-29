@@ -17,8 +17,11 @@ tar -xJf <(curl https://raw.githubusercontent.com/kantord/pricedb/master/price.d
 ```
 
 Using the compression and a reasonably fast connection it is actually feasible to just "link" the pricedb instead of
-keepig a local file that you have to update. Like so:
+keeping a local file that you have to update. Like so:
 
 ```
 ledger -f book.txt --price-db <(tar -xJf - <(curl -s https://raw.githubusercontent.com/kantord/pricedb/master/price.2015.db.tar.xz)) bal -X CNY
 ```
+
+If you are looking for a reporting tool for ledger that can handle updating your pricedb for you, I recommend checking out my other project called [ledger-cli-dashboard](https://github.com/kantord/ledger-cli-dashboard).
+
