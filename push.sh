@@ -8,18 +8,17 @@ fi
 echo "Pushing changes"
 
 setup_git() {
-  git config --global user.email "travis@travis-ci.org"
-  git config --global user.name "Travis CI"
+  git config --global user.email "github@daniel-kantor.com"
+  git config --global user.name "Automation"
 }
 
 commit_files() {
   git add --all
-  git commit --message "Add new exchanges rates (travis#$TRAVIS_BUILD_NUMBER)"
+  git commit --message "Add new exchanges rates"
 }
 
 upload_files() {
-  git remote add origin_2 https://github.com/kantord/pricedb.git > /dev/null 2>&1
-  git push origin_2 master
+  git push origin master
 }
 
 setup_git
