@@ -11,3 +11,10 @@ jobs:
     steps:
       - name: update pricedb
         run: ./update_price_db.sh
+      - name: push changes
+        run: |
+          git config --global user.name "Dániel Kántor"
+          git config --global user.email "kantord@users.noreply.github.com" 
+          git add --all
+          git commit -m "update prices"
+          git push origin master
