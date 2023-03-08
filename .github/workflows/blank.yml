@@ -11,4 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: update pricedb
-        run: ../update_price_db.sh
+        run: ./update_price_db.sh
