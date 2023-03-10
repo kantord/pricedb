@@ -16,6 +16,8 @@ jobs:
         run: |
           git config --global user.name "Dániel Kántor"
           git config --global user.email "kantord@users.noreply.github.com" 
+          git status
           git add --all
           git commit -m "update prices"
+          git status
           git push origin master
