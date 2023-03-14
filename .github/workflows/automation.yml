@@ -1,10 +1,9 @@
 name: CI
 on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '00 14 * * *'
+    
 jobs:
   build:
     runs-on: ubuntu-latest
